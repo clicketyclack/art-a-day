@@ -17,19 +17,61 @@
 */
 
 $font: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-$text-color: #796c9c;
-$background-color: #fff1bd;
-$header-background-color: #ae9be3;
+$background-color: #C7C7C7;
+$header-background-color: #8A967E;
+$prompts-background-color: #cfec9d;
 
 body {
-	font: 100% $font;
-	color: $text-color;
 	background-color: $background-color;
-
-	h1{
-		font-family: $font;
-		color: $text-color;
-		background-color: $header-background-color;
-	}
 }
 
+div.today {
+	width: 50%;
+	max-width: 35em;
+	border-radius: 8px 8px 8px 8px;
+	background-color: $prompts-background-color;
+	margin: 4em auto;
+	
+
+	div.header_today {
+		font-family: $font;
+		color: $prompts-background-color;
+		background-color: $header-background-color;
+		vertical-align: top;
+		border-radius: 8px 8px 0px 0px;
+		margin: 0.5em auto;
+		width: 100%;
+		padding-top: 0.5em;
+
+		h1 {
+			margin: 0.2em 0.5em 0.3em 0.5em; //2px 2px 2px 2px;
+			padding-bottom: 0.3em;
+			text-align: center;
+			font-size: 250%;
+		}
+	}
+
+    div.prompts_today {
+		font-family: $font;
+		color: black;
+
+		ul {
+			margin: 0.75em;
+			font-size: 150%;
+			list-style: square url("../bullet-icon.png");
+
+			li {
+				margin:0 0 0.2em 0;   
+			}
+		}
+		
+	}
+
+	div.footer_today {
+		background-color: $header-background-color;
+		vertical-align: bottom;
+		border-radius: 0px 0px 8px 8px;
+		min-height: 16px;
+	}
+	
+}
