@@ -38,15 +38,23 @@ function seed_today() : number {
 }
 
 function all_mediums()  {
-  return ["Watercolor", "Watercolor pencils", "Acrylics", "Pastels",
-          "Ink (b/w)", "Ink (multicolor)", "Fineliners (b/w)", "Fineliners (multicolor)",
-          "Charcoal", "Graphite"];
+  return ["2D raster (computer)", "2D vector (computer)", "3D (computer)", "Acrylics", 
+          "Airbrush", "Charcoal", "Charcoal", "Clay", 
+          "Collage", "Fineliners (b/w)", "Fineliners (multicolor)", "Gouache", 
+          "Graphite", "Graphite", "Ink (b/w)", "Ink (multicolor)", 
+          "Markers", "Oil", "Pastels", "Pen", 
+          "Pencil", "Scratchboard", "Watercolor", "Watercolor pencils", 
+          ];
 }
 
 function all_subjects() {
-  return ["Bird", "Insect", "Street-scape", "Landscape", "Flower",
-          "Aquatic creature", "Human(s)", "Animal", "Household item",
-          "Plant"];
+  return ["Animal", "Aquatic creature", "Architecture", "Bird", 
+          "Body part", "Fan art", "Fashion / Clothing", "Flower", 
+          "Furniture", "Household item", "Hue / color mixing exercise", "Human", 
+          "Insect", "Landscape", "Line exercise", "Plant", 
+          "Portrait", "Some Grafitti", "Street-scape", "Typography", 
+          "Value exercise", "Vehicle", "Youtube tutorial", 
+  ];
 }
 
 function gen_for_seed(seed : number) {
@@ -83,7 +91,7 @@ function string_to_random(input : string) : number {
 
 
 export function aad_main() : void {
-  var title = `For ${isoformat(new Date())}`;
+  var title = `For today (${isoformat(new Date())})`;
 
   var prompts = gen_for_seed(seed_today());
 
