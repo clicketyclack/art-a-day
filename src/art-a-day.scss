@@ -1,0 +1,35 @@
+/*
+ * Art-a-day - Generate a art prompt based on the current date.
+ * Copyright (C) 2018 Erik Mossberg
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+$font: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+$text-color: #796c9c;
+$background-color: #fff1bd;
+$header-background-color: #ae9be3;
+
+body {
+	font: 100% $font;
+	color: $text-color;
+	background-color: $background-color;
+
+	h1{
+		font-family: $font;
+		color: $text-color;
+		background-color: $header-background-color;
+	}
+}
+
